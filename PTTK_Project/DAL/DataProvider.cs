@@ -70,11 +70,26 @@ namespace DAL
         }
 
         //Procedure tra ve kieu int
-        public int ExecuteStoreProcedure(string query)
+        public int ExecuteStoreProcedure(string query, object[] parameters = null)
         {
             object result;
-            SqlCommand cmd = new SqlCommand(query);
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            if(parameters != null)
+            {
+                string[] listParams = query.Split(' ');
+                int paramIndex = 0;
+
+                foreach(string item in listParams)
+                {
+                    if (item.Contains('@'))
+                    {
+                        cmd.Parameters.AddWithValue(item, parameters[paramIndex]);
+                        paramIndex++;
+                    }
+                }
+
+            }
 
             OpenConnect();
             result = cmd.ExecuteScalar();

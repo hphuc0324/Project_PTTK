@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAL;
+using BUS;
+using DTO;
 
 namespace PTTK_Project
 {
     public partial class DoanhNghiep_DangKy : Form
     {
+        private string message = "";
         public DoanhNghiep_DangKy()
         {
             InitializeComponent();
@@ -45,14 +47,20 @@ namespace PTTK_Project
 
         private void btn_dangKy_Click(object sender, EventArgs e)
         {
+            string maSoThue = txt_MaSoThue.Text;
+            string matKhau = txt_matKhau.Text;
+            string diaChi = txt_diaChi.Text;
+            string email = txt_Email.Text;
+            string tenCongTy = txt_tenCongTy.Text;
+            string nguoiDaiDien = txt_nguoiDaiDien.Text;
+
             try
             {
-                DataProvider.Instance.OpenConnect();
-                MessageBox.Show("Connected");
+                DOITAC_DTO doitac = new DOITAC_DTO(maSoThue, matKhau, diaChi, email, tenCongTy, nguoiDaiDien);
+                int result = DOITAC_BUS.TaoDoiTac(doitac, ref message);
 
-                DataProvider.Instance.CloseConnect();
-                MessageBox.Show("Disconnected");
 
+                MessageBox.Show(message);
             }
             catch (Exception ex)
             {
