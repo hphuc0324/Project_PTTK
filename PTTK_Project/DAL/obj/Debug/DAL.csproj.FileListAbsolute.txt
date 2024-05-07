@@ -1,0 +1,9 @@
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\bin\Debug\DAL.dll
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\bin\Debug\DAL.pdb
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\bin\Debug\DTO.dll
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\bin\Debug\DTO.pdb
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\obj\Debug\DAL.dll
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\DAL\obj\Debug\DAL.pdb

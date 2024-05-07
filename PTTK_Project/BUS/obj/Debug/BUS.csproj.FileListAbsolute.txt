@@ -1,0 +1,11 @@
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\bin\Debug\BUS.dll
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\bin\Debug\BUS.pdb
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\bin\Debug\DAL.dll
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\bin\Debug\DTO.dll
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\bin\Debug\DAL.pdb
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\bin\Debug\DTO.pdb
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\obj\Debug\BUS.dll
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\BUS\obj\Debug\BUS.pdb
