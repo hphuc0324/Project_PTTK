@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
     <Compile Include="DOITAC_DAL.cs" />
+    <Compile Include="HOADON_DAL.cs" />
+    <Compile Include="PHIEUDANGTUYEN_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="THONGTINDANGTUYEN_DAL.cs" />
   </ItemGroup>

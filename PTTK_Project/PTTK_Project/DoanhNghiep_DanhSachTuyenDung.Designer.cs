@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_danhSachDangTuyen = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_maPhieu = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txt_hinhThuc = new System.Windows.Forms.TextBox();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.btn_xemUngVien = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_danhSachDangTuyen)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,15 +54,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách Đăng ký tuyển dụng";
             // 
-            // dataGridView1
+            // dgv_danhSachDangTuyen
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 92);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(524, 407);
-            this.dataGridView1.TabIndex = 1;
+            this.dgv_danhSachDangTuyen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_danhSachDangTuyen.Location = new System.Drawing.Point(12, 92);
+            this.dgv_danhSachDangTuyen.Name = "dgv_danhSachDangTuyen";
+            this.dgv_danhSachDangTuyen.RowHeadersWidth = 62;
+            this.dgv_danhSachDangTuyen.RowTemplate.Height = 28;
+            this.dgv_danhSachDangTuyen.Size = new System.Drawing.Size(524, 407);
+            this.dgv_danhSachDangTuyen.TabIndex = 1;
+            this.dgv_danhSachDangTuyen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_danhSachDangTuyen_CellContentClick);
             // 
             // label2
             // 
@@ -84,18 +85,18 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Mã Phiếu";
             // 
-            // textBox1
+            // txt_maPhieu
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(118, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 30);
-            this.textBox1.TabIndex = 4;
+            this.txt_maPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_maPhieu.Location = new System.Drawing.Point(118, 34);
+            this.txt_maPhieu.Name = "txt_maPhieu";
+            this.txt_maPhieu.Size = new System.Drawing.Size(150, 30);
+            this.txt_maPhieu.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_maPhieu);
             this.panel1.Location = new System.Drawing.Point(546, 92);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(351, 100);
@@ -104,8 +105,8 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(546, 227);
+            this.panel2.Controls.Add(this.txt_hinhThuc);
+            this.panel2.Location = new System.Drawing.Point(546, 245);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(351, 100);
             this.panel2.TabIndex = 6;
@@ -120,47 +121,48 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Hình thức";
             // 
-            // textBox2
+            // txt_hinhThuc
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(118, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 30);
-            this.textBox2.TabIndex = 4;
+            this.txt_hinhThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hinhThuc.Location = new System.Drawing.Point(118, 34);
+            this.txt_hinhThuc.Name = "txt_hinhThuc";
+            this.txt_hinhThuc.Size = new System.Drawing.Size(150, 30);
+            this.txt_hinhThuc.TabIndex = 4;
             // 
-            // button1
+            // btn_back
             // 
-            this.button1.Location = new System.Drawing.Point(755, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 48);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Trở lại";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_back.Location = new System.Drawing.Point(757, 388);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(142, 62);
+            this.btn_back.TabIndex = 7;
+            this.btn_back.Text = "Trở lại";
+            this.btn_back.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_xemUngVien
             // 
-            this.button3.Location = new System.Drawing.Point(546, 395);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 48);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Xem";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_xemUngVien.Location = new System.Drawing.Point(546, 388);
+            this.btn_xemUngVien.Name = "btn_xemUngVien";
+            this.btn_xemUngVien.Size = new System.Drawing.Size(142, 62);
+            this.btn_xemUngVien.TabIndex = 9;
+            this.btn_xemUngVien.Text = "Xem Danh sách ứng viên";
+            this.btn_xemUngVien.UseVisualStyleBackColor = true;
+            this.btn_xemUngVien.Click += new System.EventHandler(this.btn_xemUngVien_Click);
             // 
             // DoanhNghiep_DanhSachTuyenDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 634);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_xemUngVien);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_danhSachDangTuyen);
             this.Controls.Add(this.label1);
             this.Name = "DoanhNghiep_DanhSachTuyenDung";
             this.Text = "DoanhNghiep_DanhSachTuyenDung";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_danhSachDangTuyen)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -173,15 +175,15 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_danhSachDangTuyen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_maPhieu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txt_hinhThuc;
+        private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_xemUngVien;
     }
 }

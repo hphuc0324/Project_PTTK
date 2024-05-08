@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using DTO;
 
 namespace DAL
@@ -17,6 +18,21 @@ namespace DAL
             int res = Instance.ExecuteStoreProcedure(query, parameters);
 
             return res;
+        }
+
+        public static DataTable XemDanhSachDangTuyen(string maDoiTac = "")
+        {
+            DataTable dt;
+            string query = $"SELECT * FROM THONGTINDANGTUYEN WHERE MaDoiTac={maDoiTac}";
+
+            if(maDoiTac == "")
+            {
+                query += "OR1=1";
+            }
+
+            dt = Instance.ExecuteQuery(query);
+
+            return dt;
         }
     }
 }

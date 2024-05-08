@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using DTO;
 using DAL;
 
@@ -35,6 +36,11 @@ namespace BUS
                 message = "Đăng ký đăng tuyển thành công";
             }
             return res;
+        }
+
+        public static DataTable XemDanhSachDangTuyen(string maDoiTac)
+        {
+            return THONGTINDANGTUYEN_DAL.XemDanhSachDangTuyen(maDoiTac);
         }
     }
 }

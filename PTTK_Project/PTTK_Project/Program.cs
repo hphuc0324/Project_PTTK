@@ -16,7 +16,7 @@ namespace PTTK_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DoanhNghiep_DangTuyenDung());
+            Application.Run(new DoanhNghiep_DanhSachThanhToan());
         }
     }
 }

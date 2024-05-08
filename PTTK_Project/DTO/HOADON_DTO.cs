@@ -13,7 +13,7 @@ namespace DTO
         public int TongTien { get; set; }
         public string MaPhieuDangTuyen { get; set; }
 
-        public HOADON_DTO(string maHoaDon, int tongTien, string maPhieu, string tinhTrang="Chua thanh toan")
+        public HOADON_DTO(string maHoaDon, int tongTien, string maPhieu, string tinhTrang="Chưa thanh toán")
         {
             this.MaHoaDon = maHoaDon;
             this.TongTien = tongTien;

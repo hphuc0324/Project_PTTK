@@ -64,4 +64,44 @@ END
 GO
 
 
+--THANH TOAN HOA DON
+CREATE OR ALTER PROCEDURE sp_thanhToan
+@maHoaDon VARCHAR(20)
+AS
+BEGIN
+	BEGIN TRY
+		UPDATE HOADON SET TinhTrang = N'Đã thanh toán' WHERE MaHoaDon = @maHoaDon
 
+		SELECT 1;
+	END TRY
+
+	BEGIN CATCH
+		SELECT 0;
+	END CATCH
+END
+GO
+
+CREATE OR ALTER PROCEDURE sp_kiemTraThanhToan
+@maHoaDon VARCHAR(20)
+AS
+BEGIN
+	BEGIN TRY
+		DECLARE @trangThai NVARCHAR(20)
+		SET @trangThai = (SELECT TinhTrang FROM HOADON WHERE MaHoaDon = @maHoaDon)
+
+		IF(@trangThai = N'Chưa thanh toán')
+		BEGIN
+			SELECT 0
+		END
+		ELSE
+		BEGIN
+			SELECT 1
+		END
+	END TRY
+
+	BEGIN CATCH
+		SELECT 0
+	END CATCH
+END
+
+EXEC sp_kiemTraThanhToan 'HD001'

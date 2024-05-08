@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DOITAC_BUS.cs" />
+    <Compile Include="HOADON_BUS.cs" />
+    <Compile Include="PHIEUDANGTUYEN_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="THONGTINDANGTUYEN_BUS.cs" />
   </ItemGroup>
