@@ -30,25 +30,25 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_viTri = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_soLuong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dtp_ngayBatDau = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_yeuCau = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_ngayKetThuc = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_dangKy = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.cbx_hinhThuc = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -69,12 +69,20 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_viTri);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(58, 90);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(792, 53);
             this.panel1.TabIndex = 1;
+            // 
+            // txt_viTri
+            // 
+            this.txt_viTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_viTri.Location = new System.Drawing.Point(212, 8);
+            this.txt_viTri.Name = "txt_viTri";
+            this.txt_viTri.Size = new System.Drawing.Size(513, 35);
+            this.txt_viTri.TabIndex = 1;
             // 
             // label2
             // 
@@ -86,30 +94,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Vị trí tuyển dụng";
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(212, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(513, 35);
-            this.textBox1.TabIndex = 1;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txt_soLuong);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(58, 173);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(792, 53);
             this.panel2.TabIndex = 2;
             // 
-            // textBox2
+            // txt_soLuong
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(212, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(513, 35);
-            this.textBox2.TabIndex = 1;
+            this.txt_soLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_soLuong.Location = new System.Drawing.Point(212, 8);
+            this.txt_soLuong.Name = "txt_soLuong";
+            this.txt_soLuong.Size = new System.Drawing.Size(513, 35);
+            this.txt_soLuong.TabIndex = 1;
             // 
             // label3
             // 
@@ -123,12 +123,19 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.dtp_ngayBatDau);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(58, 250);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(792, 53);
             this.panel3.TabIndex = 2;
+            // 
+            // dtp_ngayBatDau
+            // 
+            this.dtp_ngayBatDau.Location = new System.Drawing.Point(212, 13);
+            this.dtp_ngayBatDau.Name = "dtp_ngayBatDau";
+            this.dtp_ngayBatDau.Size = new System.Drawing.Size(194, 26);
+            this.dtp_ngayBatDau.TabIndex = 1;
             // 
             // label4
             // 
@@ -142,20 +149,20 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.txt_yeuCau);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(58, 417);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(792, 53);
             this.panel4.TabIndex = 3;
             // 
-            // textBox4
+            // txt_yeuCau
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(212, 8);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(513, 35);
-            this.textBox4.TabIndex = 1;
+            this.txt_yeuCau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_yeuCau.Location = new System.Drawing.Point(212, 8);
+            this.txt_yeuCau.Name = "txt_yeuCau";
+            this.txt_yeuCau.Size = new System.Drawing.Size(513, 35);
+            this.txt_yeuCau.TabIndex = 1;
             // 
             // label5
             // 
@@ -167,28 +174,21 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Yêu cầu ứng viên";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(212, 13);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(194, 26);
-            this.dateTimePicker1.TabIndex = 1;
-            // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.dateTimePicker2);
+            this.panel5.Controls.Add(this.dtp_ngayKetThuc);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(58, 332);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(792, 53);
             this.panel5.TabIndex = 3;
             // 
-            // dateTimePicker2
+            // dtp_ngayKetThuc
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(212, 13);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(194, 26);
-            this.dateTimePicker2.TabIndex = 1;
+            this.dtp_ngayKetThuc.Location = new System.Drawing.Point(212, 13);
+            this.dtp_ngayKetThuc.Name = "dtp_ngayKetThuc";
+            this.dtp_ngayKetThuc.Size = new System.Drawing.Size(194, 26);
+            this.dtp_ngayKetThuc.TabIndex = 1;
             // 
             // label6
             // 
@@ -200,32 +200,46 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Đến ngày";
             // 
-            // button1
+            // btn_dangKy
             // 
-            this.button1.Location = new System.Drawing.Point(637, 583);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 45);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Tiếp tục";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_dangKy.Location = new System.Drawing.Point(637, 583);
+            this.btn_dangKy.Name = "btn_dangKy";
+            this.btn_dangKy.Size = new System.Drawing.Size(213, 45);
+            this.btn_dangKy.TabIndex = 4;
+            this.btn_dangKy.Text = "Tiếp tục";
+            this.btn_dangKy.UseVisualStyleBackColor = true;
+            this.btn_dangKy.Click += new System.EventHandler(this.btn_dangKy_Click);
             // 
-            // button3
+            // btn_back
             // 
-            this.button3.Location = new System.Drawing.Point(58, 583);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(213, 45);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Trở lại";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_back.Location = new System.Drawing.Point(58, 583);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(213, 45);
+            this.btn_back.TabIndex = 6;
+            this.btn_back.Text = "Trở lại";
+            this.btn_back.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.comboBox1);
+            this.panel6.Controls.Add(this.cbx_hinhThuc);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Location = new System.Drawing.Point(58, 493);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(792, 53);
             this.panel6.TabIndex = 4;
+            // 
+            // cbx_hinhThuc
+            // 
+            this.cbx_hinhThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_hinhThuc.FormattingEnabled = true;
+            this.cbx_hinhThuc.Items.AddRange(new object[] {
+            "Giấy báo",
+            "Banner quảng cáo",
+            "Đăng Online"});
+            this.cbx_hinhThuc.Location = new System.Drawing.Point(212, 8);
+            this.cbx_hinhThuc.Name = "cbx_hinhThuc";
+            this.cbx_hinhThuc.Size = new System.Drawing.Size(513, 37);
+            this.cbx_hinhThuc.TabIndex = 1;
             // 
             // label7
             // 
@@ -237,27 +251,14 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Hình thức";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Giấy báo",
-            "Banner quảng cáo",
-            "Đăng Online"});
-            this.comboBox1.Location = new System.Drawing.Point(212, 8);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(513, 37);
-            this.comboBox1.TabIndex = 1;
-            // 
             // DoanhNghiep_DangTuyenDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 663);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_dangKy);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -287,24 +288,24 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_viTri;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_soLuong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_ngayBatDau;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_yeuCau;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtp_ngayKetThuc;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_dangKy;
+        private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbx_hinhThuc;
         private System.Windows.Forms.Label label7;
     }
 }

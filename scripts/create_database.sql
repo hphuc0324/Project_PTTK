@@ -4,6 +4,7 @@ GO
 USE  QUANLY_HOSO_UNGTUYEN
 GO
 
+
 CREATE TABLE DOITAC
 (
 	MaSoThue VARCHAR(10) PRIMARY KEY, --Lay ma so thue lam tai khoan

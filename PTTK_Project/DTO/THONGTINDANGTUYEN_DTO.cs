@@ -18,9 +18,8 @@ namespace DTO
         public string HinhThuc { get; set; }
         public string MaDoiTac { get; set; }
         
-        public THONGTINDANGTUYEN_DTO(string maDangTuyen, int soLuong, string viTri, DateTime batDau, DateTime ketThuc, string yeuCau, string hinhThuc, string maDoiTac)
+        public THONGTINDANGTUYEN_DTO(int soLuong, string viTri, DateTime batDau, DateTime ketThuc, string yeuCau, string hinhThuc, string maDoiTac)
         {
-            this.MaDangTuyen = maDangTuyen;
             this.SoLuongTuyenDung = soLuong;
             this.ViTriTuyenDung= viTri;
             this.ThoiGianBatDau = batDau;

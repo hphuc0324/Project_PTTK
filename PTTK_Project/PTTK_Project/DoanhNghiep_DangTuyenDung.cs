@@ -7,14 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DTO;
+using BUS;
 namespace PTTK_Project
 {
     public partial class DoanhNghiep_DangTuyenDung : Form
     {
-        public DoanhNghiep_DangTuyenDung()
+        private string message = "";
+        private string MaDoiTac = "";
+        public DoanhNghiep_DangTuyenDung(string MaDoiTac="1222")
         {
             InitializeComponent();
+            this.MaDoiTac = MaDoiTac;
+        }
+
+        private void btn_dangKy_Click(object sender, EventArgs e)
+        {
+            string viTri = txt_viTri.Text;
+            int soLuong = Int32.Parse(txt_soLuong.Text);
+            DateTime ngayBatDau = DateTime.Parse(dtp_ngayBatDau.Text);
+            DateTime ngayKetThuc = DateTime.Parse(dtp_ngayKetThuc.Text);
+            string yeuCau = txt_yeuCau.Text;
+            string hinhThuc = cbx_hinhThuc.Text;
+
+            THONGTINDANGTUYEN_DTO dangTuyen = new THONGTINDANGTUYEN_DTO(soLuong, viTri, ngayBatDau, ngayKetThuc, yeuCau, hinhThuc, this.MaDoiTac);
+            try
+            {
+                THONGTINDANGTUYEN_BUS.TaoDangTuyen(dangTuyen, ref message);
+
+                MessageBox.Show(message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

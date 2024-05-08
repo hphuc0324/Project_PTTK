@@ -58,7 +58,7 @@ namespace PTTK_Project
             {
                 DOITAC_DTO doitac = new DOITAC_DTO(maSoThue, matKhau, diaChi, email, tenCongTy, nguoiDaiDien);
                 int result = DOITAC_BUS.TaoDoiTac(doitac, ref message);
-
+                //Chuyen form
 
                 MessageBox.Show(message);
             }
