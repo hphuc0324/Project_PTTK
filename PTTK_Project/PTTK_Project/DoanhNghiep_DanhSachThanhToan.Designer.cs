@@ -32,6 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbx_maPhieu = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_maHoaDon = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.txt_tinhTrang = new System.Windows.Forms.TextBox();
             this.btn_back = new System.Windows.Forms.Button();
             this.btn_thanhToan = new System.Windows.Forms.Button();
-            this.cbx_maPhieu = new System.Windows.Forms.ComboBox();
             this.btn_tim = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -89,6 +89,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(327, 84);
             this.panel1.TabIndex = 6;
+            // 
+            // cbx_maPhieu
+            // 
+            this.cbx_maPhieu.FormattingEnabled = true;
+            this.cbx_maPhieu.Location = new System.Drawing.Point(131, 34);
+            this.cbx_maPhieu.Name = "cbx_maPhieu";
+            this.cbx_maPhieu.Size = new System.Drawing.Size(168, 28);
+            this.cbx_maPhieu.TabIndex = 5;
             // 
             // panel2
             // 
@@ -179,6 +187,7 @@
             this.btn_back.TabIndex = 9;
             this.btn_back.Text = "Trở lại";
             this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // btn_thanhToan
             // 
@@ -189,14 +198,6 @@
             this.btn_thanhToan.Text = "Thanh toán";
             this.btn_thanhToan.UseVisualStyleBackColor = true;
             this.btn_thanhToan.Click += new System.EventHandler(this.btn_thanhToan_Click);
-            // 
-            // cbx_maPhieu
-            // 
-            this.cbx_maPhieu.FormattingEnabled = true;
-            this.cbx_maPhieu.Location = new System.Drawing.Point(131, 34);
-            this.cbx_maPhieu.Name = "cbx_maPhieu";
-            this.cbx_maPhieu.Size = new System.Drawing.Size(168, 28);
-            this.cbx_maPhieu.TabIndex = 5;
             // 
             // btn_tim
             // 

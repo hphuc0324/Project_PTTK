@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbx_maDangTuyen = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.btn_xemUngvien = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,14 +49,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách ứng viên";
             // 
-            // comboBox1
+            // cbx_maDangTuyen
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(273, 86);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(198, 33);
-            this.comboBox1.TabIndex = 1;
+            this.cbx_maDangTuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_maDangTuyen.FormattingEnabled = true;
+            this.cbx_maDangTuyen.Location = new System.Drawing.Point(273, 86);
+            this.cbx_maDangTuyen.Name = "cbx_maDangTuyen";
+            this.cbx_maDangTuyen.Size = new System.Drawing.Size(198, 33);
+            this.cbx_maDangTuyen.TabIndex = 1;
             // 
             // label2
             // 
@@ -97,36 +97,38 @@
             this.button1.Text = "Xét duyệt";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_back
             // 
-            this.button2.Location = new System.Drawing.Point(731, 563);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(188, 52);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Trở lại";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_back.Location = new System.Drawing.Point(731, 563);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(188, 52);
+            this.btn_back.TabIndex = 6;
+            this.btn_back.Text = "Trở lại";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
-            // button3
+            // btn_xemUngvien
             // 
-            this.button3.Location = new System.Drawing.Point(527, 86);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 33);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Xem";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_xemUngvien.Location = new System.Drawing.Point(527, 86);
+            this.btn_xemUngvien.Name = "btn_xemUngvien";
+            this.btn_xemUngvien.Size = new System.Drawing.Size(95, 33);
+            this.btn_xemUngvien.TabIndex = 7;
+            this.btn_xemUngvien.Text = "Xem";
+            this.btn_xemUngvien.UseVisualStyleBackColor = true;
+            this.btn_xemUngvien.Click += new System.EventHandler(this.btn_xemUngvien_Click);
             // 
             // DoanhNghiep_DanhSachUngVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 659);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_xemUngvien);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbx_maDangTuyen);
             this.Controls.Add(this.label1);
             this.Name = "DoanhNghiep_DanhSachUngVien";
             this.Text = "DoanhNghiep_DanhSachUngVien";
@@ -139,12 +141,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbx_maDangTuyen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_xemUngvien;
     }
 }

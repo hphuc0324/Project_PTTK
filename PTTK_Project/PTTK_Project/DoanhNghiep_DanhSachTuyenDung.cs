@@ -46,5 +46,14 @@ namespace PTTK_Project
         {
 
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            DoanhNghiep_TongHop form = new DoanhNghiep_TongHop(this.MaDoiTac);
+
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

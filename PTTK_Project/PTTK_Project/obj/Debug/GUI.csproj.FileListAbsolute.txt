@@ -20,3 +20,4 @@ C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\PTTK_Proje
 C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\PTTK_Project\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.exe
 C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.pdb
+C:\Users\PC\OneDrive - VNU-HCMUS\HCMUS\PTTK-HTTT\Project\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.DoanhNghiep_TongHop.resources

@@ -137,6 +137,7 @@
             this.btn_back.TabIndex = 7;
             this.btn_back.Text = "Trở lại";
             this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // btn_xemUngVien
             // 

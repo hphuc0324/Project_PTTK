@@ -42,5 +42,13 @@ namespace PTTK_Project
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            DoanhNghiep_TongHop form = new DoanhNghiep_TongHop();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }
